@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(degree) {
+        this.degree=degree;
+        this.convertF= function(){
+            return (degree* 1.8)+32;
+        }
+        this.convertK= function() {
+            return degree+ 273.15;
+        }
+    }
+
+    let temperature= new Temperature(10);
+    alert('Nhiet do C: '+ temperature.degree + ' '+' Do F: '+ temperature.convertF() + ' '+ ' Do K: '+ temperature.convertK() );
+
+
+</script>
+
+</body>
+</html>
